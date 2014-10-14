@@ -1,0 +1,86 @@
+Sliding window find average (time series)
+
+send data from one computer to another.
+first send at 500 packets, wait for acknolwedgement
+
+there is an x and y axis,
+
+whenever we successfully send K packets, record the number at the time it was sent.
+we will get an x y plot
+find a 3 point moving average.
+
+records_priorityqueue = priorityqueue(100)
+time_record_time = list[]
+
+def findAverage(pq):
+	sum = 0
+	for v in pq:
+		sum = sum + v
+	return sum/len(pq)
+
+1) cumulative moving average
+cumu_sum = 0
+current_avg = 0
+number_of_datums = 0
+while (live):
+	number_of_datums = number_of_datums + 1
+	new_record = liveinput( packets, time)
+	records_priorityqueue.add(new record)
+	time_record_time.add(new record)
+	moving_average = findaverage(pq)
+	#historical_average = findaverage(time_record_time)
+	cumu_sum = cumu_sum + new_record.packet
+	cumu_avg = cumu_sum / number_of datums
+	return moving_average
+
+this doesnt give any forecast at all, only presenting the present.
+
+how do we predict what will happen next?
+regression analysis
+find an equation to match the data points, and use it to predict (extrapolate or interpolate)
+
+	
+given tuples of parent child relationship, print the tree structure in the format
+
+A
+   B
+   C
+      G
+          M
+          N
+      H
+   D
+      K
+(A,(B,C))
+tuple is (parent, child, left/middle/right)
+
+tuplelist = [(a,b)]
+
+
+Given 1 million files, how to find duplicates in file content
+
+	—> hash and hash again
+
+---> Naive solution: use a hashmap, O(N) ~ O(1 million)
+
+for each file in directory:
+	if hashmap contains (file):
+		mark as duplicate
+	else:
+		hashmap.add(file)
+
+do files leave distinctive signatures that we can track easily?
+can we obtain a spectral analysis of composition of files
+	
+
+System design - 2 servers, 1 for back up, connection slow and unreliable. Design system to back up files in server 1 on server 2
+
+
+Find max in concave function
+
+
+For an array of integers, give an algorithm to determine if there are three elements that sum to zero. What are the time and space complexity? Generalize to the case where the sum of k elements is 0?
+
+
+given a key, find the node with the nearest key
+hash questions. assumptions for hash. what makes a hash function.

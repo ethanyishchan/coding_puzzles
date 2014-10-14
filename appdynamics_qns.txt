@@ -1,0 +1,23 @@
+appdynamics_qns.txt
+
+for loop,
+iterate frmo i, 0 to 3
+	j = i
+	httpcall
+	callback, print j
+
+print last number 3 times, 33333
+
+http call is asynchronous, its about closures, 
+
+for loop goes much faster than the asynchrnous calls
+
+for loop i to 3
+	function (code)
+	return call
+
+what is a scope? in angularJS
+print the nth level of a binary tree.
+
+need to practice DFS, BFS.
+
